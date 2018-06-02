@@ -12,11 +12,12 @@ import { FullLayoutComponent } from "./layouts/full/full-layout.component";
 // import { ChangeLogComponent } from './changelog/changelog.component';
 // import { FullLayoutPageComponent } from './pages/full-layout-page/full-layout-page.component';
 // import { ContentLayoutPageComponent } from './pages/content-layout-page/content-layout-page.component';
+// import { SignupComponent } from './auth/signup/signup.component';
+// import { SigninComponent } from './auth/signin/signin.component';
 
 import * as $ from 'jquery';
-import { BusinessProfileComponent } from './tour-operators/business-profile/business-profile.component';
-import { SignupComponent } from './auth/signup/signup.component';
-import { SigninComponent } from './auth/signin/signin.component';
+// import { BusinessProfileComponent } from './tour-operators/business-profile/business-profile.component';
+
 
 
 
@@ -25,9 +26,8 @@ import { SigninComponent } from './auth/signin/signin.component';
         AppComponent,
         FullLayoutComponent,
         ContentLayoutComponent,
-        SignupComponent,
-        SigninComponent,
-
+        // SignupComponent,
+        // SigninComponent,
         // BusinessProfileComponent
         // ChangeLogComponent,
         // FullLayoutPageComponent,

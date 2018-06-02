@@ -6,5 +6,9 @@ export const CONTENT_ROUTES: Routes = [
     {
         path: 'content-layout',
         loadChildren: './pages/content-layout-page/content-pages.module#ContentPagesModule'
-      }
+      },
+    {
+        path: 'auth',
+        loadChildren: './auth/auth/auth.module#AuthModule'
+    }
 ];

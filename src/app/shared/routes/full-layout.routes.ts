@@ -13,6 +13,14 @@ export const Full_ROUTES: Routes = [
   {
     path: 'tour-operators/profile',
     loadChildren: './tour-operators/tour-operators/tour-operators.module#TourOperatorsModule'
-  }
+  },
+  {
+    path: 'auth/sign-up',
+    loadChildren: './auth/auth/auth.module#AuthModule'
+  },
+  // {
+  //   path: 'auth',
+  //   loadChildren: './auth/auth/auth.module#AuthModule'
+  // }
 
 ];

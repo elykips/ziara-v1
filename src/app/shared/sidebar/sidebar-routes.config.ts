@@ -11,6 +11,11 @@ export const ROUTES: RouteInfo[] = [
     {
         path: '/tour-operators/profile', title: 'Tour Operator', icon: 'ft-square', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: []
     },
+    {
+        path: '/auth', title: 'Authentication', icon: 'ft-square', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: []
+    },
+  
+ 
     
     // {
     //     path: '', title: 'Menu Levels', icon: 'ft-align-left', class: 'has-sub', badge: '1', badgeClass: 'badge badge-pill badge-danger float-right mr-1 mt-1', isExternalLink: false,
