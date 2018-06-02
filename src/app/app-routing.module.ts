@@ -9,7 +9,7 @@ import { CONTENT_ROUTES } from "./shared/routes/content-layout.routes";
 const appRoutes: Routes = [
   {
     path: '',
-    redirectTo: 'full-layout',
+    redirectTo: 'auth',
     pathMatch: 'full',
   },
   { path: '', component: FullLayoutComponent, data: { title: 'full Views' }, children: Full_ROUTES },
