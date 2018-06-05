@@ -16,6 +16,10 @@ import { FullLayoutComponent } from "./layouts/full/full-layout.component";
 // import { SigninComponent } from './auth/signin/signin.component';
 
 import * as $ from 'jquery';
+// import { ExperiencesComponent } from './guest/experiences/experiences.component';
+// import { HowItWorksComponent } from './guest/how-it-works/how-it-works.component';
+// import { ProvidersComponent } from './guest/providers/providers.component';
+// import { SeekersComponent } from './guest/seekers/seekers.component';
 // import { BusinessProfileComponent } from './tour-operators/business-profile/business-profile.component';
 
 
@@ -26,6 +30,10 @@ import * as $ from 'jquery';
         AppComponent,
         FullLayoutComponent,
         ContentLayoutComponent,
+        // ExperiencesComponent,
+        // HowItWorksComponent,
+        // ProvidersComponent,
+        // SeekersComponent,
         // SignupComponent,
         // SigninComponent,
         // BusinessProfileComponent

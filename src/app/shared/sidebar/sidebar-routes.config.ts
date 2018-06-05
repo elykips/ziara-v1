@@ -14,6 +14,13 @@ export const ROUTES: RouteInfo[] = [
     {
         path: '/auth', title: 'Authentication', icon: 'ft-square', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: []
     },
+    {
+        path: '/experiences', title: 'Experiences', icon: 'ft-square', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: []
+    },
+    {
+        path: '/how-it-works', title: 'How It Works', icon: 'ft-square', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: []
+    },
+  
   
  
     

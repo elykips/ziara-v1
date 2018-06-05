@@ -18,9 +18,13 @@ export const Full_ROUTES: Routes = [
     path: 'auth/sign-up',
     loadChildren: './auth/auth/auth.module#AuthModule'
   },
-  // {
-  //   path: 'auth',
-  //   loadChildren: './auth/auth/auth.module#AuthModule'
-  // }
+  {
+    path: 'experiences',
+    loadChildren: './guests/guests.module#GuestsModule'
+  },
+  {
+    path: 'how-it-works',
+    loadChildren: './guests/guests.module#GuestsModule'
+  },
 
 ];
