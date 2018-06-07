@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 
+import * as firebase from 'firebase';
+import { AuthService } from '../../auth/auth/auth.service';
+
 @Component({
     selector: 'app-navbar',
     templateUrl: './navbar.component.html',
@@ -7,6 +10,14 @@ import { Component } from '@angular/core';
 })
 
 export class NavbarComponent{
-    isLoggedIn=false;
-    
+    user: firebase.User;
+    constructor( private authService:AuthService ){
+       this.authService.checkAuthState().subscribe(
+           res=> this.user = res
+       )
+    }
+
+    logout(){
+        this.authService.logoutFromGoogle()
+    }
 }

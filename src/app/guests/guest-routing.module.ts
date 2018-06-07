@@ -24,21 +24,21 @@ const routes: Routes = [
     },    
   },
   {
-    path: 'how-it-works',
+    path: '',
      component: HowItWorksComponent,
     data: {
       title: 'How It Works'
     },    
   },
   {
-    path: 'providers',
+    path: '',
      component: ProvidersComponent,
     data: {
       title: 'Providers'
     },    
   },
   {
-    path: 'seekers',
+    path: '',
      component: SeekersComponent,
     data: {
       title: 'Providers'

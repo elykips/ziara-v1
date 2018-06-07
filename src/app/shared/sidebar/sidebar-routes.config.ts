@@ -6,20 +6,18 @@ export const ROUTES: RouteInfo[] = [
         path: '/full-layout', title: 'Dashboard', icon: 'ft-layout', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: []
     },
     {
-        path: '/content-layout', title: 'Content Layout', icon: 'ft-square', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: []
-    },
-    {
         path: '/tour-operators/profile', title: 'Tour Operator', icon: 'ft-square', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: []
     },
-    {
-        path: '/auth', title: 'Authentication', icon: 'ft-square', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: []
-    },
-    {
-        path: '/experiences', title: 'Experiences', icon: 'ft-square', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: []
-    },
-    {
-        path: '/how-it-works', title: 'How It Works', icon: 'ft-square', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: []
-    },
+    // {
+    //     path: '/auth', title: 'Authentication', icon: 'ft-square', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: []
+    // },
+    // {
+    //     path: '/experiences', title: 'Experiences', icon: 'ft-square', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: []
+    // },
+    // {
+    //     path: '/how-it-works', title: 'How It Works', icon: 'ft-square', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: []
+    // },
+  
   
   
  

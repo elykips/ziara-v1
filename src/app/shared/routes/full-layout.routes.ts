@@ -1,4 +1,5 @@
 import { Routes, RouterModule } from '@angular/router';
+import { SignupComponent } from '../../auth/signup/signup.component';
 
 //Route for content layout with sidebar, navbar and footer
 export const Full_ROUTES: Routes = [
@@ -17,14 +18,8 @@ export const Full_ROUTES: Routes = [
   {
     path: 'auth/sign-up',
     loadChildren: './auth/auth/auth.module#AuthModule'
-  },
-  {
-    path: 'experiences',
-    loadChildren: './guests/guests.module#GuestsModule'
-  },
-  {
-    path: 'how-it-works',
-    loadChildren: './guests/guests.module#GuestsModule'
-  },
+  }
+
+
 
 ];
