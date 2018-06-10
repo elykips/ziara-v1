@@ -18,6 +18,18 @@ export const Full_ROUTES: Routes = [
   {
     path: 'auth/sign-up',
     loadChildren: './auth/auth/auth.module#AuthModule'
+  },
+  {
+    path: 'market-place',
+    loadChildren: './market-place/market-place.module#MarketPlaceModule'
+  },
+  {
+    path: 'inventory',
+    loadChildren: './inventory/inventory.module#InventoryModule'
+  },
+  {
+    path: 'bookings',
+    loadChildren: './bookings/bookings.module#BookingsModule'
   }
 
 

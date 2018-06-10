@@ -23,6 +23,14 @@ import { FullLayoutComponent } from "./layouts/full/full-layout.component";
 import * as $ from 'jquery';
 import { AuthService } from './auth/auth/auth.service';
 import { FormsModule } from '@angular/forms';
+// import { MyBookingsComponent } from './bookings/my-bookings/my-bookings.component';
+// import { BookingDetailsComponent } from './bookings/booking-details/booking-details.component';
+// import { TourFormComponent } from './inventory/tour-form/tour-form.component';
+// import { MyToursComponent } from './inventory/my-tours/my-tours.component';
+// import { MyTourDetailsComponent } from './inventory/my-tour-details/my-tour-details.component';
+// import { AgentsComponent } from './market-place/agents/agents.component';
+// import { SocialMediaComponent } from './market-place/social-media/social-media.component';
+// import { AgentDetailsComponent } from './market-place/agent-details/agent-details.component';
 // import { NgForm } from '@angular/forms';
 
 
@@ -42,6 +50,14 @@ import { FormsModule } from '@angular/forms';
         AppComponent,
         FullLayoutComponent,
         ContentLayoutComponent,
+        // MyBookingsComponent,
+        // BookingDetailsComponent,
+        // TourFormComponent,
+        // MyToursComponent,
+        // MyTourDetailsComponent,
+        // AgentsComponent,
+        // SocialMediaComponent,
+        // AgentDetailsComponent,
     
         // ExperiencesComponent,
         // HowItWorksComponent,
