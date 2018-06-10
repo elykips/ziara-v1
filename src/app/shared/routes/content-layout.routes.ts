@@ -34,5 +34,6 @@ export const CONTENT_ROUTES: Routes = [
     {
         path: 'seekers',
         loadChildren: './guests/seekers/seekers.module#SeekersModule'
-    }
+    },
+ 
 ];

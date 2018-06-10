@@ -1,10 +1,15 @@
 import { RouteInfo } from './sidebar.metadata';
 
 export const ROUTES: RouteInfo[] = [
-
     {
-        path: '/full-layout', title: 'Dashboard', icon: 'ft-layout', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: []
+        path: '', title: 'Dashboard', icon: 'ft-layout', class: 'has-sub', badge: '', badgeClass: '', isExternalLink: false, submenu: [
+            { path: '/dashboard/admin', title: 'Administrator', icon: 'ft-user', class: '', badge: '', badgeClass: 'badge badge-pill badge-danger float-right mr-1 mt-1', isExternalLink: false, submenu: [] },
+            { path: '/dashboard/tour-operator', title: 'Tour Operator', icon: 'ft-user', class: '', badge: '', badgeClass: 'badge badge-pill badge-danger float-right mr-1 mt-1', isExternalLink: false, submenu: [] }
+        ]
     },
+    // {
+    //     path: '/full-layout', title: 'Dashboard', icon: 'ft-layout', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: []
+    // },
     {
         path: '#', title: 'Tour Operator', icon: 'ft-home', class: 'has-sub', badge: '', badgeClass: '', isExternalLink: false,submenu: [
             { path: '/tour-operators/profile', title: 'Profile', icon: 'ft-user', class: '', badge: '', badgeClass: 'badge badge-pill badge-danger float-right mr-1 mt-1', isExternalLink: false, submenu: [] },
@@ -42,11 +47,6 @@ export const ROUTES: RouteInfo[] = [
     // {
     //     path: '/how-it-works', title: 'How It Works', icon: 'ft-square', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: []
     // },
-  
-  
-  
- 
-    
     // {
     //     path: '', title: 'Tour Operator', icon: 'ft-align-left', class: 'has-sub', badge: '1', badgeClass: 'badge badge-pill badge-danger float-right mr-1 mt-1', isExternalLink: false,
     //     submenu: [

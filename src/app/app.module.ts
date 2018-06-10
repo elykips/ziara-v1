@@ -23,6 +23,8 @@ import { FullLayoutComponent } from "./layouts/full/full-layout.component";
 import * as $ from 'jquery';
 import { AuthService } from './auth/auth/auth.service';
 import { FormsModule } from '@angular/forms';
+// import { HomeComponent } from './home/home/home.component';
+// import { DashboardComponent } from './dashboard/dashboard/dashboard.component';
 // import { MyBookingsComponent } from './bookings/my-bookings/my-bookings.component';
 // import { BookingDetailsComponent } from './bookings/booking-details/booking-details.component';
 // import { TourFormComponent } from './inventory/tour-form/tour-form.component';
@@ -50,6 +52,8 @@ import { FormsModule } from '@angular/forms';
         AppComponent,
         FullLayoutComponent,
         ContentLayoutComponent,
+        // HomeComponent,
+        // DashboardComponent,
         // MyBookingsComponent,
         // BookingDetailsComponent,
         // TourFormComponent,
