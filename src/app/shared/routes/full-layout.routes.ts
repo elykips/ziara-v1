@@ -17,7 +17,7 @@ export const Full_ROUTES: Routes = [
   },
   {
     path: 'tour-operators/profile',
-    loadChildren: './tour-operators/tour-operators/tour-operators.module#TourOperatorsModule'
+    loadChildren: './tour-operators/tour-operators.module#TourOperatorsModule'
   },
   {
     path: 'auth/sign-up',
@@ -34,7 +34,11 @@ export const Full_ROUTES: Routes = [
   {
     path: 'bookings',
     loadChildren: './bookings/bookings.module#BookingsModule'
-  }
+  },
+  {
+    path: 'tour-operators',
+    loadChildren: './tour-operators/tour-operators.module#TourOperatorsModule'
+},
 
 
 

@@ -19,13 +19,17 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "assets/css/demo.css",
-        "assets/sass/app.scss",
+        "./assets/css/demo.css",
+        "./assets/sass/app.scss",
+        "./assets/css/wizard.css",
+        "./assets/css/quill.snow.css",
+        "./assets/css/quill.bubble.css",
         "styles.css"
       ],
       "scripts": [
         "../node_modules/jquery/dist/jquery.min.js",
         "assets/js/perfect-scrollbar.jquery.min.js"
+   
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {

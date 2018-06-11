@@ -22,7 +22,10 @@ import { FullLayoutComponent } from "./layouts/full/full-layout.component";
 
 import * as $ from 'jquery';
 import { AuthService } from './auth/auth/auth.service';
+import { TourOperatorsService } from './services/tour-operators.service';
+
 import { FormsModule } from '@angular/forms';
+// import { CreateProfileWizardComponent } from './tour-operators/create-profile-wizard/create-profile-wizard.component';
 // import { HomeComponent } from './home/home/home.component';
 // import { DashboardComponent } from './dashboard/dashboard/dashboard.component';
 // import { MyBookingsComponent } from './bookings/my-bookings/my-bookings.component';
@@ -52,6 +55,7 @@ import { FormsModule } from '@angular/forms';
         AppComponent,
         FullLayoutComponent,
         ContentLayoutComponent,
+        // CreateProfileWizardComponent,
         // HomeComponent,
         // DashboardComponent,
         // MyBookingsComponent,
@@ -85,7 +89,8 @@ BrowserAnimationsModule,
     ],
     providers: [
         AngularFireAuth,
-        AuthService
+        AuthService,
+        TourOperatorsService
     ],
     bootstrap: [AppComponent]
 })
