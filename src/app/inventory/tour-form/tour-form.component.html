@@ -61,17 +61,17 @@
 			</div>
 		</div>
 
-		<div class="col-md-6">
-			<div class="card">
-				<div class="card-header">
-					<h4 class="card-title" id="basic-layout-icons">{{ title.value }}</h4>
-					<p class="mb-0">{{ category.value }}</p>
-				</div>
-				<div class="card-body">
-					<div class="px-3">
-              <p class="mb-0">{{ price.value }}</p>
-         </div>
-      </div>
-    </div>
-  </div>
+		<div *ngIf="f.value" class="col-md-6">
+
+        <div   class="card">
+            <div class="card-body">
+              <img *ngIf="imageUrl.value" class="card-img-top img-fluid" [src]="imageUrl.value" alt="Card image cap">
+              <div class="card-block">
+                <h4  class="card-title">{{ title.value }}</h4>
+                <p class="card-text">{{ category.value }}</p>
+                <a class="btn btn-raised btn-warning"> {{ price.value }} </a>
+              </div>
+            </div>
+          </div>
+    </div> 
 </div>
