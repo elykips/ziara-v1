@@ -1,3 +1,77 @@
-<p>
-  tour-form works!
-</p>
+<div class="row match-height">
+		<div class="col-md-6">
+			<div class="card">
+				<div class="card-header">
+					<h4 class="card-title" id="basic-layout-tooltip">New Tour</h4>
+				</div>
+				<div class="card-body">
+					<div class="px-3">
+
+						<form class="form" #f="ngForm"  (submit)="postTour(f.value)">
+							<div class="form-body">
+
+								<div class="form-group">
+									<label for="title">Title</label>
+									<input ngModel #title="ngModel" type="text" id="title" class="form-control"  name="title" data-toggle="tooltip" data-trigger="hover" data-placement="top" data-title="Tour Title">
+								</div>
+
+                <div class="form-group">
+                  <label for="description">Description</label>
+                  <textarea ngModel #description="ngModel" name="description" id="description" rows="5" class="form-control" data-toggle="tooltip" data-trigger="hover" data-placement="top" data-title="Description"></textarea>
+                </div>
+  
+                <div class="form-group">
+                  <label for="itinerary">Itinerary</label>
+                  <textarea ngModel #itinerary="ngModel" name="itinerary" id="itinerary" rows="5" class="form-control"   data-toggle="tooltip" data-trigger="hover" data-placement="top" data-title="Itinerary"></textarea>
+                </div>
+
+                <div class="form-group">
+                  <label for="category">Tour Category</label>
+                  <select ngModel #category="ngModel" name="category" id="category"  class="form-control" data-toggle="tooltip" data-trigger="hover" data-placement="top" data-title="Priority">
+                    <option select="selected">Select Category</option>
+                    <option value="adventure">Adventure</option>
+                    <option value="relaxation">Relaxation</option>
+                    <option value="nightlife">Nightlife</option>
+                  </select>
+                </div>
+  
+
+                <div class="form-group">
+                  <label for="price">Price</label>
+                  <input type="text" ngModel #price="ngModel" name="price"  id="price" class="form-control"  data-toggle="tooltip" data-trigger="hover" data-placement="top" data-title="Price">
+                </div>
+
+                <div class="form-group">
+                  <label for="imageUrl">image Ulr</label>
+                  <input type="text" ngModel #imageUrl="ngModel" name="imageUrl"  id="price" class="form-control"  data-toggle="tooltip" data-trigger="hover" data-placement="top" data-title="Price">
+                </div>
+							</div>
+
+							<div class="form-actions">
+								<button type="button" class="btn btn-raised btn-warning mr-1">
+									<i class="ft-x"></i> Cancel
+								</button>
+								<button type="submit" class="btn btn-raised btn-primary">
+									<i class="fa fa-check-square-o"></i> Save
+								</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-6">
+			<div class="card">
+				<div class="card-header">
+					<h4 class="card-title" id="basic-layout-icons">{{ title.value }}</h4>
+					<p class="mb-0">{{ category.value }}</p>
+				</div>
+				<div class="card-body">
+					<div class="px-3">
+              <p class="mb-0">{{ price.value }}</p>
+         </div>
+      </div>
+    </div>
+  </div>
+</div>
