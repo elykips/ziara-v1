@@ -18,7 +18,8 @@ export class CreateProfileWizardComponent implements OnInit {
   }
 
   postBusinessProfile(profile){
-    this.tourOperatorService.createBusibesProfile(profile)
+    // this.tourOperatorService.createBusibesProfile(profile)
+    console.log(profile)
 
   }
 

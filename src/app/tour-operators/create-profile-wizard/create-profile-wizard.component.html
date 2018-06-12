@@ -15,7 +15,7 @@
       </div>
       <div class="card-body">
         <div class="card-block">
-          <form class="icons-tab-steps wizard-circle .wizard-circle" #f="ngForm">
+          <form class="icons-tab-steps wizard-circle .wizard-circle" #f="ngForm" (submit)="postBusinessProfile(f.value)">
             <!-- Step 1 -->
             <h6>Overview</h6>
             <fieldset>
@@ -23,13 +23,13 @@
                 <div class="col-md-12">
                   <div class="form-group">
                     <label for="companyName">Company Name</label>
-                    <input type="text" class="form-control" id="companyName" name="companyName">
+                    <input ngModel name="companyName" #companyName="ngModel" type="text" class="form-control" id="companyName" >
                   </div>
                 </div>
                 <div class="col-md-12">
                   <div class="form-group">
-                    <label for="companyDescription">Description</label>
-                    <textarea name="companyDescription" id="companyDescription" rows="4" class="form-control"></textarea>
+                    <label for="description">Description</label>
+                    <textarea ngModel name="description" #description="ngModel" id="description" rows="4" class="form-control"></textarea>
                   </div>
                 </div>
               </div>
@@ -37,13 +37,13 @@
                 <div class="col-md-12">
                   <div class="form-group">
                     <label for="logoUrl">Logo Url</label>
-                    <input type="text" class="form-control" id="logoUrl" name="logoUrl">
+                    <input ngModel name="logoUrl" #logoUrl="ngModel" type="text" class="form-control" id="logoUrl" >
                   </div>
                 </div>
                 <div class="col-md-12">
                   <div class="form-group">
                     <label for="businessType">Select Type of Business</label>
-                    <select class="custom-select form-control" id="businessType" name="businessType">
+                    <select ngModel name="businessType" #businessType="ngModel" class="custom-select form-control" id="businessType" >
                       <option select="selected">Select Type</option>
                       <option value="Tour Operator">Tour Operator</option>
                       <option value="Travel Agent">Travel Agent</option>
@@ -58,16 +58,16 @@
               <div class="row">
                 <div class="col-md-12">
                   <div class="form-group">
-                    <label for="BRN">Business Registration Number</label>
-                    <input type="text" class="form-control" id="BRN" name="BRN">
+                    <label for="businessResgistration">Business Registration Number</label>
+                    <input ngModel name="businessResgistration" #businessResgistration="ngModel" ngModel type="text" class="form-control" id="businessResgistration">
                   </div>
                   <div class="form-group">
-                    <label for="AMN">Association Membership Number</label>
-                    <input type="text" class="form-control" id="AMN" name="AMN">
+                    <label for="associationNumber">Association Membership Number</label>
+                    <input type="text" ngModel name="associationNumber" #associationNumber="ngModel" class="form-control" id="associationNumber">
                   </div>
                   <div class="form-group">
-                    <label for="AMC">Association Membership Category</label>
-                    <input type="text" class="form-control" id="AMC" name="AMC">
+                    <label for="associationCategory">Association Membership Category</label>
+                    <input type="text" ngModel name="associationCategory" #associationCategory="ngModel"  class="form-control" id="associationCategory">
                   </div>
                 </div>
               </div>
@@ -79,27 +79,23 @@
                 <div class="col-md-12">
                   <div class="form-group">
                     <label for="telephone">Telephone Number</label>
-                    <input type="text" class="form-control" id="telephone" name="telephone">
-                  </div>
-                  <div class="form-group">
-                    <label for="phone">Phone Number</label>
-                    <input type="text" class="form-control" id="phone" name="phone">
+                    <input type="text" ngModel name="telephone" #telephone="ngModel" class="form-control" id="telephone" >
                   </div>
                   <div class="form-group">
                     <label for="email">Email Address</label>
-                    <input type="email" class="form-control" id="email" name="email">
+                    <input ngModel  type="email" name="email" #email="ngModel" class="form-control" id="email" >
                   </div>
                   <div class="form-group">
-                    <label for="website">Website Address</label>
-                    <input type="url" class="form-control" id="website" name="website">
+                    <label for="websiteUrl">Website Address</label>
+                    <input ngModel type="url" name="websiteUrl" #websiteUrl="ngModel" class="form-control" id="websiteUrl" >
                   </div>
                   <div class="form-group">
-                    <label for="fb">Facebook</label>
-                    <input type="url" class="form-control" id="fb" name="fb">
+                    <label for="facebook">Facebook</label>
+                    <input ngModel #facebook="ngModel" type="url" class="form-control" id="facebook" name="facebook">
                   </div>
                   <div class="form-group">
                       <label for="twitter">Twitter</label>
-                      <input type="url" class="form-control" id="twitter" name="twitter">
+                      <input type="url" ngModel #twitter="ngModel" class="form-control" id="twitter" name="twitter">
                     </div>
                 </div>
               </div>
@@ -111,34 +107,20 @@
                 <div class="col-md-12">
                   <div class="form-group">
                     <label for="country">Country</label>
-                    <input type="text" class="form-control" id="country" name="country">
+                    <input ngModel type="text"  #country="ngModel" class="form-control" id="country" name="country">
                   </div>
                   <div class="form-group">
                     <label for="city">City</label>
-                    <input type="text" class="form-control" id="city" name="city">
+                    <input ngModel type="text" #city="ngModel" class="form-control" id="city" name="city">
                   </div>
                   <div class="form-group">
                     <label for="address">Address</label>
-                    <textarea name="address" id="address" rows="4" class="form-control"></textarea>
+                    <textarea ngModel name="address" #address="ngModel" id="address" rows="4" class="form-control"></textarea>
                   </div>
                 </div>
-                <div class="col-md-12">
-                    <div id="kick-start" class="card">
-                        <div class="card-header">
-                          <h5 class="card-title">Map Preview</h5>
-                        </div>
-                        <div class="card-body">
-                          <div class="card-block">
-                            <div class="card-text">
-                              
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                </div>
-
               </div>
             </fieldset>
+            
           </form>
         </div>
       </div>

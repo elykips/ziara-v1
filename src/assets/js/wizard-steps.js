@@ -19,6 +19,7 @@ $(document).ready( function(){
             finish: 'Create'
         },
         onFinished: function (event, currentIndex) {
+            
             alert("Business Profile Updated");
         }
     });
