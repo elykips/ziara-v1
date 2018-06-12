@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BusinessProfileComponent implements OnInit {
 
-  constructor() { }
+ //Variable Declaration
+ currentPage: string = "About"
 
-  ngOnInit() {
-  }
+ ngOnInit() {
+     // Horizontal Timeline js for user timeline
+    //  $.getScript('./assets/js/vertical-timeline.js');
+ }
+
+ showPage(page: string) {
+     this.currentPage = page;
+ }
 
 }
