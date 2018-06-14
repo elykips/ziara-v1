@@ -38,8 +38,7 @@ export const Full_ROUTES: Routes = [
   {
     path: 'tour-operators',
     loadChildren: './tour-operators/tour-operators.module#TourOperatorsModule'
-},
-
+}
 
 
 ];

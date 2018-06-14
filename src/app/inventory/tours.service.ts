@@ -2,26 +2,22 @@ import { Injectable } from '@angular/core';
 import * as firebase from 'firebase'; 
 import {  AngularFireDatabase } from 'angularfire2/database';
 
+import { Observable } from 'rxjs/Observable';
 
 
 @Injectable()
 export class ToursService {
 
-  // $key: string;
-  // file: File;
-  // url: string;
-  // progress: string;
-  // CreatedAt: Date = new Date();
-  constructor( private db: AngularFireDatabase) {
-    // this.file = myFile;
+  constructor( private db: AngularFireDatabase ) {
    }
 
   saveTours(tour){
-    return this.db.list('/tours').push(tour);
+    // return this.db.list('/tours').push(tour);
   }
 
   getTours(){
-    return this.db.list('/tours').snapshotChanges()
+    return this.db.list('tours').valueChanges()
+   
   }
 
 }

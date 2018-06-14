@@ -4,6 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { DashboardComponent } from './dashboard.component';
 import { TourOperatorDashboardComponent } from './tour-operator-dashboard/tour-operator-dashboard.component';
+import { ChartsModule } from 'ng2-charts/ng2-charts';
 
 
 
@@ -30,7 +31,9 @@ const routes: Routes = [
 ];
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule],
+  exports: [RouterModule,
+    ChartsModule
+  ],
 })
 
 
