@@ -26,7 +26,8 @@ import { TourOperatorsService } from './services/tour-operators.service';
 
 import { FormsModule } from '@angular/forms';
 import { ToursService } from './inventory/tours.service';
-import { AngularFirestore } from 'angularfire2/firestore';
+// import { ChartsModule } from 'ng2-charts/ng2-charts';
+// import { AngularFirestore } from 'angularfire2/firestore';
 // import { CreateProfileWizardComponent } from './tour-operators/create-profile-wizard/create-profile-wizard.component';
 // import { HomeComponent } from './home/home/home.component';
 // import { DashboardComponent } from './dashboard/dashboard/dashboard.component';
@@ -87,14 +88,15 @@ BrowserAnimationsModule,
         SharedModule,
         AngularFireModule.initializeApp(environment.firebase),
         AngularFireDatabaseModule,
-        NgbModule.forRoot()
+        NgbModule.forRoot(),
+        // ChartsModule
     ],
     providers: [
         AngularFireAuth,
         AuthService,
         TourOperatorsService,
         ToursService,
-        AngularFirestore,
+        // AngularFirestore,
     ],
     bootstrap: [AppComponent]
 })

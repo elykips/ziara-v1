@@ -37,6 +37,7 @@ export const ROUTES: RouteInfo[] = [
             // ,{ path: '/bookings/booking-details', title: 'Booking Details', icon: 'ft-bell', class: '', badge: '', badgeClass: 'badge badge-pill badge-danger float-right mr-1 mt-1', isExternalLink: false, submenu: [] }
         ]
     },
+    
     // {
     //     path: '/auth', title: 'Authentication', icon: 'ft-square', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: []
     // },

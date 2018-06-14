@@ -24,7 +24,7 @@
           <div class="media">
             <div class="media-body text-left">
               <h3 class="mb-1 success">36</h3>
-              <span>Travel Agencies</span>
+              <span>Channels</span>
             </div>
             <div class="media-right align-self-center">
               <i class="icon-globe success font-large-2 float-right"></i>
@@ -41,7 +41,7 @@
           <div class="media">
             <div class="media-body text-left">
               <h3 class="mb-1 primary">$11,600</h3>
-              <span>Revenue Earned</span>
+              <span>Revenue</span>
             </div>
             <div class="media-right align-self-center">
               <i class="icon-users primary font-large-2 float-right"></i>
@@ -58,7 +58,7 @@
           <div class="media">
             <div class="media-body text-left">
               <h3 class="mb-1 warning">$870</h3>
-              <span>Commission Paid</span>
+              <span>Commission</span>
             </div>
             <div class="media-right align-self-center">
               <i class="icon-pie-chart warning font-large-2 float-right"></i>
@@ -72,38 +72,45 @@
 </section>
 <!-- Minimal statistics with bg color section start -->
 <section id="minimal-statistics-bg">
-	<div class="row">
+	<!-- <div class="row">
 		<div class="col-12 mt-3 mb-1">
 			<div class="content-header">Monthly Bookings </div>
 			<p class="content-sub-header">Graph of montly bookings</p>
 		</div>
-  </div>
+  </div> -->
   
-  <!-- Line Chart Starts -->
-<!-- <div class="row">
-    <div class="col-sm-12">
-        <div class="content-header">ChartJS</div>
-        <p class="content-sub-header">Chart.js can be used with ES6 modules, plain JavaScript and module loaders.</p>
-    </div>
-</div>
+<!-- Pie Chart Starts -->
 <div class="row">
-    <div class="col-sm-12">
-        <div class="card">
-            <div class="card-header">
-                <h4 class="card-title">Line Chart</h4>
-            </div>
-            <div class="card-body">
-                <div class="card-block">
-                    <div class="height-400">
-                            <canvas height="400" baseChart class="chart" [datasets]="lineChartData" [labels]="lineChartLabels" [options]="lineChartOptions" [colors]="lineChartColors"
-                            [legend]="lineChartLegend" [chartType]="lineChartType" (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)" ></canvas>
-                    </div>
+  <div class="col-sm-4">
+      <div class="card">
+          <div class="card-header">Multi-Channel Bookings</div>
+          <div class="card-body">
+              <div class="card-block">
+                  <div id="pie-chart1" class="height-400">
+                      <canvas baseChart class="chart" [data]="pieChartData" [labels]="pieChartLabels" [options]="pieChartOptions" [chartType]="pieChartType" (chartHover)="chartHovered($event)" [colors]="pieChartColors"
+                          (chartClick)="chartClicked($event)"></canvas>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="col-sm-8">
+    <div class="card">
+        <div class="card-header">
+            <h4 class="card-title">Pie Chart</h4>
+        </div>
+        <div class="card-body">
+            <div class="card-block">
+                <div id="pie-chart1" class="height-400">
+                    <canvas baseChart class="chart" [data]="lineChartData" [labels]="lineChartLabels" [options]="lineChartOptions" [chartType]="lineChartType" (chartHover)="chartHovered($event)" [colors]="lineChartColors"
+                        (chartClick)="chartClicked($event)"></canvas>
                 </div>
             </div>
         </div>
     </div>
-</div> -->
-<!-- Line Chart Ends -->
+</div>
+</div>
+<!-- Pie Chart Ends -->
 
 </section>
 <!-- // Minimal statistics with bg color section end -->
