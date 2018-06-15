@@ -2,13 +2,13 @@
 
 export var lineChartData: Array<any> = [
 
-    { data: [5, 19, 34, 81, 56, 68, 56, 80, 90, 150, 130, 200], label: 'My First dataset' }
+    { data: [20, 19, 34, 43, 76, 68], label: 'Monthly Bookings' }
     
     // ,{ data: [28, 48, 40, 19, 86, 27, 90], label: 'My Second dataset' },
     // { data: [45, 25, 16, 36, 67, 18, 76], label: 'My Third dataset - No bezier' }
   
   ];
-  export var lineChartLabels: Array<any> = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'];
+  export var lineChartLabels: Array<any> = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug'];
   export var lineChartOptions: any = {
     animation: {
       duration: 1000, // general animation time
@@ -44,13 +44,13 @@ export var lineChartData: Array<any> = [
         },
         scaleLabel: {
           display: true,
-          labelString: 'Value'
+          labelString: 'Number of Bookings'
         }
       }]
     },
     title: {
       display: true,
-      text: 'Chart.js Line Chart - Legend'
+      text: 'Line graph of number of bookings per month'
     }
   };
   export var lineChartColors: Array<any> = [

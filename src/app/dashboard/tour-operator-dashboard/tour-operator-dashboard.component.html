@@ -96,14 +96,12 @@
   </div>
   <div class="col-sm-8">
     <div class="card">
-        <div class="card-header">
-            <h4 class="card-title">Pie Chart</h4>
-        </div>
+      <div class="card-header">Total Monthly Bookings</div>
         <div class="card-body">
             <div class="card-block">
                 <div id="line-chart1" class="height-400">
-                    <canvas baseChart class="chart" [data]="lineChartData" [labels]="lineChartLabels" [options]="lineChartOptions" [chartType]="lineChartType" (chartHover)="chartHovered($event)" [colors]="lineChartColors"
-                        (chartClick)="chartClicked($event)"></canvas>
+                  <canvas height="400" baseChart class="chart" [datasets]="lineChartData" [labels]="lineChartLabels" [options]="lineChartOptions" [colors]="lineChartColors"
+                  [legend]="lineChartLegend" [chartType]="lineChartType" (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)" ></canvas>
                 </div>
             </div>
         </div>
