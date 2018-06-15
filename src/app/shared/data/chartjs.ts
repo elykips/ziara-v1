@@ -2,12 +2,13 @@
 
 export var lineChartData: Array<any> = [
 
-    { data: [65, 59, 80, 81, 56, 55, 40], label: 'My First dataset' },
-    { data: [28, 48, 40, 19, 86, 27, 90], label: 'My Second dataset' },
-    { data: [45, 25, 16, 36, 67, 18, 76], label: 'My Third dataset - No bezier' }
+    { data: [5, 19, 34, 81, 56, 68, 56, 80, 90, 150, 130, 200], label: 'My First dataset' }
+    
+    // ,{ data: [28, 48, 40, 19, 86, 27, 90], label: 'My Second dataset' },
+    // { data: [45, 25, 16, 36, 67, 18, 76], label: 'My Third dataset - No bezier' }
   
   ];
-  export var lineChartLabels: Array<any> = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
+  export var lineChartLabels: Array<any> = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'];
   export var lineChartOptions: any = {
     animation: {
       duration: 1000, // general animation time
