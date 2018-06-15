@@ -22,20 +22,25 @@ export class LoginComponent {
    }
 
     // On submit button click    
-  onSubmit() {
+  onSignInWithCredentials(credentials) {
       this.loginForm.reset();
   }
   // On Forgot password link click
   onForgotPassword() {
-      this.router.navigate(['forgotpassword'], { relativeTo: this.route.parent });
+      this.router.navigate(['forgotpassword']);
   }
   // On registration link click
-  onRegister() {
-      this.router.navigate(['register'], { relativeTo: this.route.parent });
+  onDontHaveAccount() {
+      this.router.navigate(['/signup']);
   }
 
-  login(){
-    this.authService.loginWithGoogle()
+  onSignInWithGoogle(){
+    this.authService.logInWithGoogle();
+    this.router.navigate(['/dashboard/tour-operator']);
+  }
+
+  onLogOut(){
+    this.authService.logoutFromGoogle()
   }
 
   
