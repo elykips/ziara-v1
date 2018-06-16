@@ -22,7 +22,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav">
 
-                        <li *ngIf="!user" class="nav-item">
+                        <!-- <li *ngIf="!user" class="nav-item">
                             <a class="nav-link position-relative" routerLink="/providers">
                                 <span class="font-medium-1 blue-grey darken-4">Tour Operators</span>
                             </a>
@@ -86,26 +86,14 @@
                                 <p class="d-none">User Settings</p>
                             </a>
 
-                            <!-- <a class="nav-link position-relative" id="dropdownBasic3" ngbDropdownToggle>
-                                <span class="avatar avatar-md avatar-online">
-                                    <img class="media-object d-flex mr-3 bg-primary height-50  rounded-circle" [title]="user.displayName" [src]="user.photoURL" [alt]="user.displayName">
-                                    <span class="notification badge badge-pill badge-danger">4</span>
-                                </span>
-                            </a> -->
 
                             <div ngbDropdownMenu aria-labelledby="dropdownBasic3">
-                                <!-- <a class="dropdown-item py-1" href="javascript:;">
-                                    <i class="ft-settings mr-2"></i>
-                                    <span>Dashboard</span>
-                                </a> -->
+        
                                 <a class="dropdown-item py-1" routerLink="/tour-operators/profile">
                                     <i class="ft-edit mr-2"></i>
                                     <span>Edit Profile</span>
                                 </a>
-                                <!-- <a class="dropdown-item py-1" href="javascript:;">
-                                    <i class="ft-mail mr-2"></i>
-                                    <span>My Inbox</span>
-                                </a> -->
+
                                 <div class="dropdown-divider"></div>
                                 <a 
                                 (click)="logOutFromGoogle()"
@@ -114,7 +102,30 @@
                                     <span>Logout</span>
                                 </a>
                             </div>
-                        </li>
+                        </li> -->
+
+
+                        <li class="nav-item" ngbDropdown placement="bottom-right">
+                                <a class="nav-link " id="dropdownDemo" ngbDropdownToggle>
+                                    <i class="ft-user font-medium-3 blue-grey darken-4"></i>
+                                    <p class="d-none">User Settings</p>
+                                </a>
+
+    
+                                <div ngbDropdownMenu aria-labelledby="dropdownDemo">
+                                    <a class="dropdown-item py-1" routerLink="/tour-operators/profile">
+                                        <i class="ft-edit mr-2"></i>
+                                        <span>Demo Tour Operator</span>
+                                    </a>
+                                    <div class="dropdown-divider"></div>
+                                    <a 
+                                    (click)="logOutFromGoogle()"
+                                    class="dropdown-item">
+                                        <i class="ft-power mr-2"></i>
+                                        <span>Back Home</span>
+                                    </a>
+                                </div>
+                            </li>
                     </ul>
                 </div>
             </div>
